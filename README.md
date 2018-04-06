@@ -25,7 +25,10 @@ git clone https://github.com/jklaiber/digall_python
 chmod +x digall.py
 ```
 ```
-mv digall.py /bin
+sudo mv digall.py /bin
+```
+```
+sudo ln -s digall.py digall
 ```
 
 You get all options by typing -h or --help
