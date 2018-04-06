@@ -7,7 +7,7 @@ import dns.query
 import dns.zone
 from optparse import OptionParser
 
-parser = OptionParser()
+parser = OptionParser(usage="%prog [-f] [-q]", version="%prog 1.0")
 parser.add_option("-d", "--domain", help="the domainname you want to lookup")
 parser.add_option("-i", "--ipadress", help="the ip adress you want to lookup")
 parser.add_option("-n", "--nameserver", default="8.8.8.8", help="take another nameserver default is 8.8.8.8 from google")
