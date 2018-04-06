@@ -54,7 +54,7 @@ digall -d google.com
 
 ## Authors
 
-* **Julian Klaiber** - *Initial work* - [jklaiber](https://github.com/jklaiber)
+* **Julian Klaiber** 
 
 ## License
 
