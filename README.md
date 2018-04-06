@@ -28,7 +28,7 @@ chmod +x digall.py
 mv digall.py /bin
 ```
 
-You get all options by typing --help
+You get all options by typing -h or --help
 ```
 digall --help
 
