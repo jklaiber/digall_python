@@ -13,45 +13,41 @@ apt-get install python
 
 ### Installing
 
-
-
 ```
-Give the example
+git clone https://github.com/jklaiber/digall_python
 ```
-
-And repeat
-
 ```
-until finished
+chmod +x digall.py
+```
+```
+mv digall.py /bin
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+You get all options by typing --help
+```
+digall --help
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Options:
+  -h, --help            show this help message and exit
+  -d DOMAIN, --domain=DOMAIN
+                        the domainname you want to lookup
+  -i IPADRESS, --ipadress=IPADRESS
+                        the ip adress you want to lookup
+  -n NAMESERVER, --nameserver=NAMESERVER
+                        take another nameserver default is 8.8.8.8 from google
+  -f FILE, --file=FILE  filename
+  -p PATH, --path=PATH  path to the reportfile (use only with -f)
 
 ```
-Give an example
-```
 
-### And coding style tests
+## Examples
 
-Explain what these tests test and why
 
-```
-Give an example
-```
+
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Julian Klaiber** - *Initial work* - [jklaiber](https://github.com/jklaiber)
 
 ## License
 
