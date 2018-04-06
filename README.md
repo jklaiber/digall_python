@@ -46,8 +46,10 @@ Options:
 ```
 
 ## Examples
-
-
+```
+digall -d google.com
+```
+![example_google.com](https://github.com/jklaiber/digall_python/blob/master/examples.png)
 
 
 ## Authors
