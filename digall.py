@@ -31,6 +31,8 @@ try:
         print '\x1b[0;32;40m' + 'IP Adress:' + '\x1b[0m'
         for rdata in myIP:
                 print rdata
+except:
+        print '\x1b[0;31;40m' + 'IP resolve failed:' + '\x1b[0m'
 
 try:
         myAnswers = myResolver.query(options.domain, "SOA")
