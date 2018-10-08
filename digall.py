@@ -5,6 +5,7 @@ import sys
 import dns.resolver
 import dns.query
 import dns.zone
+import socket
 from optparse import OptionParser
 
 parser = OptionParser(usage="%prog [-f] [-q]", version="%prog 1.0")
@@ -24,6 +25,12 @@ myResolver.nameservers = [options.nameserver]
 print "Digall Tool for easier domain lookups. Written in the beautiful Python Language."
 print "Copyright (c) 2018 Julian Klaiber\n"
 print '\x1b[5;30;44m' + 'DNS lookup <' + options.domain + '>' + '\x1b[0m''\n'
+
+try:
+        myIP = socket.gethostbyname(options.domain)
+        print '\x1b[0;32;40m' + 'IP Adress:' + '\x1b[0m'
+        for rdata in myIP:
+                print rdata
 
 try:
         myAnswers = myResolver.query(options.domain, "SOA")
