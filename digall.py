@@ -72,15 +72,6 @@ except:
         print ""
         print '\x1b[0;31;40m' + 'A Record Query failed:' + '\x1b[0m'
 
-try:
-        myAnswers = myResolver.query(options.domain, "CNAME")
-        print ""
-        print '\x1b[0;32;40m' + 'CNAME Records:' + '\x1b[0m'
-        for rdata in myAnswers:
-                print rdata
-except:
-        print ""
-        print  '\x1b[0;31;40m' + 'CNAME Record Query failed:' + '\x1b[0m'
 
 try:
         myAnswers = myResolver.query(options.domain, "TXT")
@@ -92,13 +83,3 @@ except:
         print ""
         print '\x1b[0;31;40m' + 'TXT Record Query failed:' + '\x1b[0m'
 
-try:
-        myAnswers = myResolver.query(options.domain, "PTR")
-        print ""
-        print '\x1b[0;32;40m' + 'PTR Records:' + '\x1b[0m'
-        for rdata in myAnswers:
-                print rdata
-
-except:
-        print ""
-        print '\x1b[0;31;40m' + 'PTR Record Query failed:' + '\x1b[0m'
